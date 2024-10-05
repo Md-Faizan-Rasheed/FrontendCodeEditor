@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <!-- *************************************** -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/theme/material.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/addon/hint/show-hint.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/addon/hint/show-hint.min.css">
+     -->
+ <!-- *************************** -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Container-Starting  -->
+    <div class="container">
+        <!-- Left-Container-Starting  -->
+          <div class="left-Container">
+             
+            <!-- Html-container Start -->
+             <div class="htmlContainer">
+                   <div class="head">
+                    <div class="hleft">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="hright">
+                        <!-- Closing ico -->
+                    </div>
+                   </div>
+                   <div class="textarea">
+                    <label for="html"></label>
+                    <textarea name="html" onkeyup="run()" id="html"></textarea>
+                   </div>
+             </div>
+            <!-- Html-container end -->
+<!-- *********************************************** -->
+            <!-- CSS-container Start  -->
+             <div class="cssContainer">
+                <div class="head">
+                    <div class="hleft">
+                        <i class="fa-brands fa-css3-alt"></i>                  
+                              <span>CSS</span>
+                    </div>
+
+                    <div class="hright">
+                        <!-- Closing ico -->
+                    </div>
+                   </div>
+                   <div class="textarea">
+                    <label for="css"></label>
+                    <textarea name="css" onkeyup="run()" id="css"></textarea>
+                   </div>
+             </div>
+           <!-- CSS-container End  -->
+<!-- ***************************************************** -->
+            <!-- Javascript-container Start  -->
+             <div class="jsContainer">
+                <div class="head">
+                    <div class="hleft">
+                        <i class="fa-brands fa-js"></i>                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="hright">
+                        <!-- Closing ico -->
+                    </div>
+                   </div>
+                   <div class="textarea">
+                    <label for="js"></label>
+                    <textarea name="js"  onkeyup="run()" id="js">
+                        
+                    </textarea>
+                   </div>
+             </div>
+           <!-- Javascript-container End  -->
+
+          </div>
+         <!-- Left-Container-Ending  -->
+
+         <!-- Right-Container-Starting  -->
+          <div class="line"></div>
+          <div class="right-Container">
+            <div class="outputhead">
+                <div class="hright">
+                    <i class="fa-solid fa-play"></i>                    
+                    <span>OUTPUT</span>
+                </div>
+                <div class="hright">
+                    <!-- Closing ico -->
+                </div>
+               </div>
+               <div class="textarea">
+                <label for="output"></label>
+                <iframe name="output" id="output" class="output">
+
+                </iframe>
+               </div>
+          </div>
+        <!-- Right-Container-End  -->
+
+        <div class="box"></div>
+        <div class="flip">Flip</div>
+    </div>
+    <!-- Container-End  -->
+
+    <script src="index.js"></script>
+</body>
+</html>
